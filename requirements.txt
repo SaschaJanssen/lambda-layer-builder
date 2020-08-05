@@ -1,0 +1,6 @@
+numpy==1.19.1
+pandas
+boto
+PyAthena
+pystan==2.18
+fbprophet==0.6
