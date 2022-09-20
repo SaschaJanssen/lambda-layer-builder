@@ -1,4 +1,8 @@
-FROM lambci/lambda:build-python3.7 
+FROM public.ecr.aws/lambda/python:3.9 
+
+RUN yum update -y && \
+	 yum install zip -y && \
+	 yum clean all
 
 WORKDIR /var/task
 
